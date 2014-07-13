@@ -16,7 +16,8 @@
   "spm": {
     "main": "index.js",
     "output": [
-      "uploader.swf"
+      "uploader.swf",
+      "assets/less/uploader.less"
     ],
     "dependencies": {
       "jquery": "1.9.1",
