@@ -13,11 +13,16 @@
     "url": "https://github.com/buiteam/bui-uploader/issues"
   },
   "licenses": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-clean": "^0.3.1",
+    "gulp-less": "~1.2.3"
+  },
   "spm": {
     "main": "index.js",
     "output": [
       "uploader.swf",
-      "assets/less/uploader.less"
+      "assets/css/uploader.css"
     ],
     "dependencies": {
       "jquery": "1.9.1",
