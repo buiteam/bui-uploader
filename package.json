@@ -22,7 +22,7 @@
     "main": "index.js",
     "output": [
       "uploader.swf",
-      "assets/css/uploader.css"
+      "css/uploader.css"
     ],
     "dependencies": {
       "jquery": "1.9.1",

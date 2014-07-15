@@ -1,30 +1,21 @@
 'use strict';
 
 var gulp = require('gulp');
-var clean = require('gulp-clean');
 var less = require('gulp-less');
-
-//清理目录
-gulp.task('clean', function() {
-  return gulp.src([
-      './assets/css'
-    ], {read: false})
-    .pipe(clean());
-});
 
 gulp.task('less', function() {
   return gulp.src([
-      './assets/less/*.less'
+      './css/*.less'
     ])
     .pipe(less())
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('watch', function(){
-  gulp.watch('./assets/**/*.less', ['less']);
+  gulp.watch('./css/*.less', ['less']);
 });
 
-gulp.task('default', ['clean'], function() {
+gulp.task('default', function() {
   return gulp.start('less');
 });
 
