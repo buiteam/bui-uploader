@@ -1,7 +1,7 @@
 /**
  * @ignore
  * @fileoverview 文件上传按钮,使用input[type=file]
- * @author: 索丘 zengyue.yezy@alibaba-inc.com
+ * @author: 索丘 yezengyue@gmail.com
  **/
 
 var $ = require('jquery'),

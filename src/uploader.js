@@ -1,7 +1,7 @@
 /**
  * @ignore
  * @fileoverview 异步文件上传组件
- * @author 索丘 zengyue.yezy@alibaba-inc.com
+ * @author 索丘 yezengyue@gmail.com
  **/
 
 var $ = require('jquery'),

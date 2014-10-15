@@ -1,7 +1,7 @@
 /**
  * @ignore
  * @fileoverview 文件上传主题的处理
- * @author 索丘 <zengyue.yezy@alibaba-inc.com>
+ * @author 索丘 yezengyue@gmail.com
  **/
 
 var BUI = require('bui-common');

@@ -1,6 +1,6 @@
 /**
  * @fileoverview 文件上传的工厂类
- * @author 索丘 <zengyue.yezy@alibaba-inc.com>
+ * @author 索丘 yezengyue@gmail.com
  * @ignore
  **/
 

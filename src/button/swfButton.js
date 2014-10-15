@@ -1,7 +1,7 @@
 /**
  * @ignore
  * @fileoverview flash上传按钮
- * @author: zengyue.yezy
+ * @author: 索丘 yezengyue@gmail.com
  **/
 
 var $ = require('jquery'),
