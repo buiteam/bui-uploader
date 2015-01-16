@@ -192,6 +192,7 @@ var Uploader = Component.Controller.extend({
 
     button.on('change', function(ev) {
       var files = ev.files;
+      _self.fire('beforechange', {items: files});
       //对添加的文件添加状态
       queue.addItems(files);
       _self.fire('change', {items: files});
