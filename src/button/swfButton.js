@@ -14,7 +14,11 @@ var $ = require('jquery'),
 
 function getBaseUrl(){
   if(window.seajs){
-    return seajs.pluginSDK ? seajs.pluginSDK.util.loaderDir : seajs.data.paths['bui'];
+    if (seajs.pluginSDK && seajs.pluginSDK.util && seajs.pluginSDK.util.loaderDir) {
+      return seajs.pluginSDK.util.loaderDir;
+    } else {
+      return seajs.data.paths['bui'];
+    }
   }
   else if(window.KISSY){
     return KISSY.Config.packages['bui'].base;
