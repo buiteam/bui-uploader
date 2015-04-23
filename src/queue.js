@@ -32,7 +32,7 @@ var Queue = SimpleList.extend({
         var itemContainer = $(ev.target).parents('.bui-queue-item'),
           item = _self.getItemByElement(itemContainer);
 
-      if(_self.fire('beforeremove', {item: item}) !== false) {
+      if(_self.fire('beforeremove', {item: item, target: ev.target}) !== false) {
         _self.removeItem(item);
       }
     });
