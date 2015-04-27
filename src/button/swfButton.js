@@ -124,7 +124,7 @@ var SwfButton = ButtonBase.extend({
      * @type {String} url
      */
     flashUrl:{
-      value: baseUrl + 'uploader.swf'
+      value: baseUrl + '/uploader.swf'
     },
     /**
      * flash的配置参数，一般不需要修改
