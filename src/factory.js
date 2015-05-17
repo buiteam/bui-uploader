@@ -10,7 +10,9 @@ var BUI = require('bui-common'),
   SwfButton = require('./button/swfButton'),
   Ajax = require('./type/ajax'),
   Flash = require('./type/flash'),
-  Iframe = require('./type/iframe');
+  Iframe = require('./type/iframe'),
+  UploadifyButton = require('./button/uploadify'),
+  Uploadify = require('./type/uploadify');
 
 /**
  * @BUI.Uploader.Factory
@@ -33,6 +35,9 @@ Factory.prototype = {
     else if(type === 'flash'){
       return new Flash(config);
     }
+    else if (type === 'uploadify') {
+      return new Uploadify(config);
+    }
     else{
       return new Iframe(config);
     }
@@ -46,6 +51,9 @@ Factory.prototype = {
   createButton: function(type, config){
     if(type === 'ajax' || type === 'iframe'){
       return new HtmlButton(config);
+    }
+    else if (type === 'uploadify') {
+      return new UploadifyButton(config);
     }
     else{
       return new SwfButton(config);

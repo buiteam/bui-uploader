@@ -3,7 +3,6 @@
  * @author 索丘 yezengyue@gmail.com
  * @ignore
  **/
-
 var BUI = require('bui-common'),
   Uploader = BUI.namespace('Uploader');
 

@@ -17,7 +17,8 @@ function getBaseUrl(){
     if (seajs.pluginSDK && seajs.pluginSDK.util && seajs.pluginSDK.util.loaderDir) {
       return seajs.pluginSDK.util.loaderDir;
     } else {
-      return seajs.data.paths['bui'];
+      var paths = seajs.data.paths || {};
+      return paths['bui'] || seajs.data.base;
     }
   }
   else if(window.KISSY){
